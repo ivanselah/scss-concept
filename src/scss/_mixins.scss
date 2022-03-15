@@ -13,7 +13,7 @@
     color: yellow;
   }
 }
-// mixin 작성한 스타일들이 @content 가 되는거임.
+// responsive안에 작성한 스타일들이 @content 가 되는거임.
 @mixin test {
   @content;
 }
