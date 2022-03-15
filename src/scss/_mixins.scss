@@ -1,0 +1,36 @@
+@mixin superTitle($color) {
+  color: $color;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+// mixin은 상황에 따라 다르게 코딩을 하고 싶을 때 사용
+@mixin conditionTitle($word) {
+  font-size: 30px;
+  margin-bottom: 10px;
+  @if $word == 'odd' {
+    color: blue;
+  } @else {
+    color: yellow;
+  }
+}
+// mixin 작성한 스타일들이 @content 가 되는거임.
+@mixin test {
+  @content;
+}
+
+$minIphone: 500px;
+$maxIphone: 600px;
+$minTablet: 600px;
+$maxTablet: 700px;
+
+@mixin responsive($device) {
+  @if $device == 'iphone' {
+    @media screen and (min-width: $minIphone) and (max-width: $maxIphone) {
+      @content;
+    }
+  } @else if $device == 'tablet' {
+    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) {
+      @content;
+    }
+  }
+}

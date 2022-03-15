@@ -1,0 +1,69 @@
+@import '_variables';
+@import '_mixins';
+@import '_extend';
+
+.App {
+  background-color: $bg;
+
+  h1 {
+    color: white;
+    font-size: $titleSize;
+    &:hover {
+      color: blue;
+    }
+  }
+
+  .box {
+    h2 {
+      &:nth-child(odd) {
+        @include superTitle(green);
+      }
+      &:nth-child(even) {
+        @include superTitle(black);
+      }
+    }
+  }
+
+  .box2 {
+    h2 {
+      &:nth-child(odd) {
+        @include conditionTitle('odd');
+      }
+      &:nth-child(even) {
+        @include conditionTitle('even');
+      }
+    }
+  }
+
+  .box3 {
+    a {
+      @extend %button;
+      text-decoration: none;
+    }
+
+    button {
+      @extend %button;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .box4 {
+    a {
+      @include test {
+        text-decoration: none;
+      }
+    }
+    .media {
+      @include responsive('iphone') {
+        color: black;
+        font-weight: bold;
+        font-size: 100px;
+      }
+      @include responsive('tablet') {
+        color: blueviolet;
+        font-size: 200px;
+      }
+    }
+  }
+}

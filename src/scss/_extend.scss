@@ -1,0 +1,12 @@
+// extend는 말 그대로 코드를 재사용하고 싶을 때 사용
+// extend 할 것에 % 붙여 작성한다.
+
+%button {
+  font-family: inherit;
+  border-radius: 7px;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+}
