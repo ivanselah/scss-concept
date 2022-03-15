@@ -56,6 +56,7 @@
     }
     .media {
       @include responsive('iphone') {
+        // 아래 스타일들은 @content 안으로 들어감
         color: black;
         font-weight: bold;
         font-size: 100px;
