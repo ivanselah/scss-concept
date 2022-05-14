@@ -11,40 +11,35 @@
     <script src="https://kit.fontawesome.com/af547d4015.js" crossorigin="anonymous"></script>
     <title>Master HTML</title>
   </head>
+
   <body>
-    <h1>Bill sharing request <span>from ivanselah</span></h1>
-
-    <div class="receipt">
-      <h2>McDonald's</h2>
-      <strong class="barcode">
-        <img src="" alt="" />
-      </strong>
-      <span aria-label="Issue on July 20th, 20xx">24.07.20xx</span>
-      <div>
-        <dl>
-          <div>
-            <dt>Coke Light - 0.3<span aria-label="litter">L</span></dt>
-            <dd><strong>&dollar;1.50</strong></dd>
-          </div>
-        </dl>
-        <dl>
-          <div>
-            <dt>Heineken Beer - 0.5<span aria-label="litter">L</span></dt>
-            <dd><strong>&dollar;3.25</strong></dd>
-          </div>
-        </dl>
-        <dl>
-          <div>
-            <dt>Chicken McNuggets</dt>
-            <dd><strong>&dollar;21.00</strong></dd>
-          </div>
-        </dl>
-
-        <dl>
-          <dt>In total</dt>
-          <dd><strong>&dollar;25.75</strong></dd>
-        </dl>
+    <div class="feed">
+      <div class="feed-user-profile">
+        <a href="#"><img src="./aseets/myImage.jpg" alt="" /></a>
+        <div>
+          <h1><a href="">Ivanselah</a></h1>
+          <span aria-label="written 30 minutes ago">30 min</span>
+        </div>
+        <button type="button">Follow</button>
       </div>
+      <div class="feed-content">
+        <p>The most beautiful experience we can have is the mysterious. It is the fundamental emotion that stands at the cradle of true art and true science. — Albert Einstein</p>
+      </div>
+      <div class="feed-footer">
+        <button type="button">10 Likes</button>
+        <button type="button" class="commentBtn">0 Comments</button>
+      </div>
+      <form class="feed-comment">
+        <textarea placeholder="Write a comment"></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </body>
+  <script>
+    const btn = document.querySelector('.commentBtn');
+    const form = document.querySelector('.feed-comment');
+    btn.onclick = () => {
+      form.classList.toggle('active');
+    };
+  </script>
 </html>
