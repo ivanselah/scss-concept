@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,33 +13,49 @@
   </head>
 
   <body>
-    <div class="feed">
-      <div class="feed-user-profile">
-        <a href="#"><img src="./aseets/myImage.jpg" alt="" /></a>
+    <main>
+      <header>
+        <h1>Home</h1>
+        <button type="button" aria-label="options">..</button>
         <div>
-          <h1><a href="">Ivanselah</a></h1>
-          <span aria-label="written 30 minutes ago">30 min</span>
+          <h2></h2>
         </div>
-        <button type="button">Follow</button>
-      </div>
-      <div class="feed-content">
-        <p>The most beautiful experience we can have is the mysterious. It is the fundamental emotion that stands at the cradle of true art and true science. — Albert Einstein</p>
-      </div>
-      <div class="feed-footer">
-        <button type="button">10 Likes</button>
-        <button type="button" class="commentBtn">0 Comments</button>
-      </div>
-      <form class="feed-comment">
-        <textarea placeholder="Write a comment"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+      </header>
+      <section>
+        <h1 class="sr-only">What's happening?</h1>
+        <form>
+          <img src="#" alt="" />
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <button type="button" aria-label="upload files"><!-- Icon --></button>
+          <input type="file" multiple accept="image/*, video/*" />
+        </form>
+      </section>
+      <section>
+        <h1>Your Timeline</h1>
+        <ol>
+          <li>
+            <article>
+              <h1>from hello</h1>
+              <header>
+                <a href="">
+                  <img src="" alt="" />
+                </a>
+                <h2>
+                  <a href="">익명</a>
+                </h2>
+                <dl>
+                  <div>
+                    <dt>Username</dt>
+                    <dd>@anontuty</dd>
+                  </div>
+                </dl>
+              </header>
+            </article>
+          </li>
+        </ol>
+      </section>
+    </main>
   </body>
-  <script>
-    const btn = document.querySelector('.commentBtn');
-    const form = document.querySelector('.feed-comment');
-    btn.onclick = () => {
-      form.classList.toggle('active');
-    };
-  </script>
+
+  <script></script>
 </html>
