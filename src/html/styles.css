@@ -120,7 +120,26 @@ p {
   align-items: center;
 }
 
-/* >= 768px */
+/* service */
+.service {
+  background-color: #f4f5f7;
+  padding: 80px 15px;
+}
+
+.service .col-12:first-child {
+  margin-bottom: 40px;
+}
+
+.service-title {
+  font-size: 20px;
+  line-height: 1.3636363636;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  color: #2b292d;
+  margin-bottom: 16px;
+}
+
+/* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
   /* Reset */
   p {
@@ -144,5 +163,13 @@ p {
   }
   .landing .btn-group .fill-button:first-child {
     margin-right: 16px;
+  }
+  /* service */
+  .service-title {
+    font-size: 26px;
+    line-height: 1.3076923077;
+  }
+  .service .col-12:first-child {
+    margin-bottom: 0px;
   }
 }
