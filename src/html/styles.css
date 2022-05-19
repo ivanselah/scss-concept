@@ -85,6 +85,26 @@ p {
   color: #3040c4;
 }
 
+.section-category {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 34px;
+  line-height: 1.0588235294;
+  letter-spacing: -0.03em;
+  color: #2b292d;
+  margin-bottom: 24px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
 /* landing */
 .landing {
   background-color: #fdded8;
@@ -139,6 +159,56 @@ p {
   margin-bottom: 16px;
 }
 
+/* program */
+.program {
+  padding: 80px 15px;
+}
+
+.program .section-category {
+  color: #009b4d;
+}
+
+.program .section-desc {
+  margin-bottom: 32px;
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.program-card:hover {
+  background-color: #3141c5;
+}
+
+.program-card:hover strong {
+  color: #fff;
+}
+
+.program-card img {
+  display: block;
+  width: auto;
+  height: 195px;
+  margin-bottom: 16px;
+}
+
+.program-card strong {
+  width: 100%;
+  color: #2b292d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3333333333;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
   /* Reset */
@@ -146,6 +216,28 @@ p {
     font-size: 22px;
     line-height: 1.4545454545;
   }
+
+  .section-category {
+    font-size: 22px;
+    line-height: 1.0909090909;
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+  .section-desc {
+    font-size: 22px;
+    line-height: 1.4545454545;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+  .section {
+    padding-bottom: 96px;
+  }
+
   /* landing */
   .landing-title {
     font-size: 70px;
@@ -171,5 +263,12 @@ p {
   }
   .service .col-12:first-child {
     margin-bottom: 0px;
+  }
+  /* program */
+  .program {
+    text-align: center;
+  }
+  .program .section-desc {
+    margin-bottom: 72px;
   }
 }
