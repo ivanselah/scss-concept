@@ -102,7 +102,7 @@ p {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 80px 15px !important;
 }
 
 /* landing */
@@ -143,7 +143,6 @@ p {
 /* service */
 .service {
   background-color: #f4f5f7;
-  padding: 80px 15px;
 }
 
 .service .col-12:first-child {
@@ -160,10 +159,6 @@ p {
 }
 
 /* program */
-.program {
-  padding: 80px 15px;
-}
-
 .program .section-category {
   color: #009b4d;
 }
@@ -213,11 +208,6 @@ p {
 }
 
 /* curriculum */
-
-.curriculum {
-  padding: 0 16px;
-}
-
 .curriculum .section-category {
   color: #0189d1;
 }
@@ -249,6 +239,66 @@ p {
   line-height: 1.4666666667;
   letter-spacing: -0.01em;
   color: #2b292d;
+}
+
+/* stay */
+.stay {
+  background-color: #f2f8fa;
+  padding: 65px 15px 0 15px;
+}
+.stay-img {
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.stay-img img {
+  height: 190px;
+}
+
+.stay-detail__title {
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  color: #2b292d;
+  margin-bottom: 16px;
+}
+
+.stay-detail__desc {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+.stay-detail-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.stay-detail-form input {
+  padding: 12px 16px;
+  margin-bottom: 8px;
+}
+
+.stay-detail-form .fill-button {
+  width: 100%;
+  text-align: center;
+}
+
+.stay-detail-footer {
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.7692307692;
+  color: #7b7b7e;
+}
+
+.stay-detail-footer a {
+  text-decoration: underline !important;
 }
 
 /* >= 768px (Desktop) */
@@ -333,5 +383,54 @@ p {
   }
   .curriculum .row:last-child .col-12:first-child {
     margin-bottom: 0;
+  }
+  /* stay */
+
+  .stay-img {
+    width: 370px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 0;
+    margin-bottom: 0;
+  }
+
+  .stay-img img {
+    height: 285px;
+    margin-left: 0;
+  }
+
+  .stay-detail {
+    width: 100%;
+  }
+
+  .stay-detail__title {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .stay-detail__desc {
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.4545454545;
+  }
+
+  .stay-detail-form {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .stay-detail-form input {
+    width: 372px;
+    margin-right: 8px;
+    margin-bottom: 0;
+    height: 56px;
+  }
+  .stay-detail-form .fill-button {
+    width: 160px;
+    font-size: 18px;
+    margin-right: 0;
+  }
+  .stay-detail-footer {
+    text-align: left;
   }
 }
